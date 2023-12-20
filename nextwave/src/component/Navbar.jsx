@@ -12,6 +12,10 @@ const Navbar = () => {
     setMenu(!menu);
   };
 
+  const closeMenu = () => {
+    setMenu(false)
+  }
+
   return (
     <div className="fixed w-full">
       <div>
@@ -57,9 +61,15 @@ const Navbar = () => {
               Contact
             </Link>
           </nav>
+          <Link   to="home"
+              spy={true}
+              smooth={true}
+              duration={500}>
           <div className="hidden md:flex mb-1  text-center">
             <Button title="Get Started" />
           </div>
+          </Link>
+          
           <div className="md:hidden cursor-pointer">
             {menu ? (
               <IoIosClose size={25} onClick={handleMenu} />
@@ -72,7 +82,7 @@ const Navbar = () => {
         <div
           className={`${
             menu ? "translate-x-0" : "-translate-x-full"
-          } md:hidden  w-full h-screen flex flex-col  bg-slate-600 text-center gap-4 pt-4 transition-transform duration-300 `}
+          } md:hidden  w-full h-screen flex flex-col absolute  bg-slate-600 text-center gap-4 pt-4 transition-transform duration-300 `}
         >
           <div className="flex flex-col h-2/5">
             <Link
@@ -80,6 +90,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
+              onClick={closeMenu}
               className="cursor-pointer hover:w-2/5 hover:duration-200 hover:bg-slate-500 md:w-[0px] hover:rounded-xl  m-auto hover:text-amber-300"
             >
               Home
@@ -89,6 +100,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
+              onClick={closeMenu}
               className="cursor-pointer hover:w-2/5 hover:duration-200 hover:bg-slate-500 md:w-[0px] hover:rounded-xl m-auto hover:text-amber-300"
             >
               About
@@ -98,6 +110,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
+              onClick={closeMenu}
               className="cursor-pointer hover:w-2/5 hover:duration-200 hover:bg-slate-500 md:w-[0px] hover:rounded-xl  m-auto hover:text-amber-300"
             >
               Project
@@ -107,12 +120,20 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
+              onClick={closeMenu}
               className="cursor-pointer hover:w-2/5 hover:duration-200 hover:bg-slate-500 md:w-[0px] hover:rounded-xl m-auto hover:text-amber-300"
             >
               Contact
             </Link>
-
+            <Link to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={closeMenu}>
             <Button title="Get Started" />
+            </Link>
+
+            
           </div>
         </div>
       </div>

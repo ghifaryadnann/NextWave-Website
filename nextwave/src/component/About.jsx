@@ -18,13 +18,13 @@ const About = () => {
 
             <div className="mt-5 flex flex-col sm:flex-row   ">
               <div>
-                <p className=" sm:w-4/5 opacity-80 ">
+                <p className=" sm:w-4/5 text-gray-600 ">
                   Kami adalah sebuah Digital Agency yang berbasis di Tangerang,
                   yang berdedikasi untuk mengoptimalkan kinerja bisnis melalui
                   solusi terkini dalam SEO, Ads, Web, dan Media Sosial.
                 </p>
                 <div className="hidden sm:inline mt-5 sm:w-4/5">
-                  <h2 className="text-2xl text-blue-500">Visi</h2>
+                  <h2 className="text-2xl text-blue-500 mt-4">Visi</h2>
                   <p className="opacity-80">
                     Menjadi pelopor dalam inovasi digital bisnis yang
                     menginspirasi dan membawa perubahan positif dalam masyarakat
