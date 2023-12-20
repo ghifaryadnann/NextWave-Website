@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="fixed w-full">
+    <div className="fixed z-[100] w-full">
       <div>
         <div className="flex flex-row justify-between bg-slate-700 p-5 md:px-50 px-5 shadow-[1px]">
           <div className="flex  w-[150px] items-center">
@@ -82,7 +82,7 @@ const Navbar = () => {
         <div
           className={`${
             menu ? "translate-x-0" : "-translate-x-full"
-          } md:hidden  w-full h-screen flex flex-col absolute  bg-slate-600 text-center gap-4 pt-4 transition-transform duration-300 `}
+          } md:hidden  w-full h-screen flex flex-col absolute z-[100]  bg-slate-600 text-center gap-4 pt-4 transition-transform duration-300 `}
         >
           <div className="flex flex-col h-2/5">
             <Link

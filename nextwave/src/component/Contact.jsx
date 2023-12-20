@@ -2,19 +2,26 @@ import React from "react";
 import logo_nextwave from "../assets/logo_nextwave.png";
 import { LinearGradient } from "react-text-gradients";
 
+
+
+
+
 const Contact = () => {
+
+ 
+
   return (
     <div className="h-full w-full bg-white">
       <span className="flex justify-center items-center">
-        <img className="h-[50px]  m-5 m-auto" src={logo_nextwave} />
+        <img data-aos="fade-top" className="h-[50px]  m-5 m-auto" src={logo_nextwave} />
       </span>
       <div className="flex w-full justify-center flex-col items-center p-5 h-full bg-slate-700 ">
-        <h1 className="text-[40px] mb-3">
+        <h1 data-aos = "fade-left" className="text-[40px] mb-3">
           <LinearGradient gradient={["to left", "#17acff ,#ff68f0"]}>
             Contact Us
           </LinearGradient>
         </h1>
-        <div className="flex flex-col p-5 shadow-2xl  justify-center items-center">
+        <div data-aos ="flip-right" className="flex flex-col p-5 shadow-2xl  justify-center items-center">
           <div>
             <div>
               <div>
@@ -40,16 +47,21 @@ const Contact = () => {
             </div>
 
             <div className="shadow-2xl px-3 rounded my-3">
-              <form className="flex w-full flex-col gap-3">
+                
+              <form  className="flex w-full flex-col gap-3">
                 <span>Nama</span>
-                <input className="rounded-xl text-black p-1" />
+                <input type="text" className="rounded-xl text-black p-1" />
                 <span>No Whatsapp</span>
-                <input className="rounded-xl text-black p-1" />
+                <input  type="text"  className="rounded-xl text-black p-1" />
               </form>
               <div>
-                <button className="bg-red-500 rounded-xl hover:bg-red-700 hover:duration-300 p-1 w-full my-4">
+                <a href="https://api.whatsapp.com/send?phone=6281281659252&text=Halo%2C%20Welcome%20to%20NextWave.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank">
+                   <button  className="bg-red-500 rounded-xl hover:bg-red-700 hover:duration-300 p-1 w-full my-4">
                   Submit
-                </button>
+                </button> 
+                </a>
+                
+            
               </div>
             </div>
           </div>
