@@ -5,16 +5,16 @@ import "../component/Component.css";
 import { LinearGradient } from "react-text-gradients";
 import { Link } from "react-scroll";
 import Aos from "aos";
-import "aos/dist/aos.css"
-
+import "aos/dist/aos.css";
 
 const Home = () => {
   useEffect(() => {
-    Aos.init({duration:3000})
-  },[])
- 
+    Aos.init({ duration: 3000 });
+  }, []);
 
   return (
+    
+
     <div className="flex w-full h-screen">
       <div>
         <div className="flex flex-col sm:flex-row p-5 justify-center sm:px-[50px]  text-center w-full h-full items-center ">

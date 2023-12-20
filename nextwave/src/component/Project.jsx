@@ -6,6 +6,7 @@ import { SiGoogleads } from "react-icons/si";
 
 const Project = () => {
   return (
+    
     <div className="m-auto p-4">
        <div className=" grid">
           <h1 data-aos = "zoom-in-up" className="text-[40px] text-center sm:text-center">

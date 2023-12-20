@@ -9,10 +9,10 @@ import Maps from "./layout/Maps";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
 
-      <main>
+      <main >
         <div id="home">
           <Home />
         </div>
@@ -34,7 +34,7 @@ const App = () => {
       <p className="text-center text-sm bg-slate-600">
         Created by Ghifary Adnan
       </p>
-    </div>
+    </>
   );
 };
 

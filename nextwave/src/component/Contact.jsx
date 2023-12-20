@@ -50,9 +50,9 @@ const Contact = () => {
                 
               <form  className="flex w-full flex-col gap-3">
                 <span>Nama</span>
-                <input type="text" className="rounded-xl text-black p-1" />
+                <input type="text" className="rounded-xl text-amber-700 p-1" />
                 <span>No Whatsapp</span>
-                <input  type="text"  className="rounded-xl text-black p-1" />
+                <input  type="text"  className="rounded-xl text-amber-700 p-1" />
               </form>
               <div>
                 <a href="https://api.whatsapp.com/send?phone=6281281659252&text=Halo%2C%20Welcome%20to%20NextWave.%20Ada%20yang%20bisa%20kami%20bantu%3F" target="_blank">
