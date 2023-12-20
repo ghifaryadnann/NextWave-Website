@@ -11,7 +11,7 @@ const Contact = () => {
  
 
   return (
-    <div className="h-full w-full bg-white">
+    <div className="h-full w-full bg-white overflow-hidden">
       <span className="flex justify-center items-center">
         <img data-aos="fade-top" className="h-[50px]  m-5 m-auto" src={logo_nextwave} />
       </span>

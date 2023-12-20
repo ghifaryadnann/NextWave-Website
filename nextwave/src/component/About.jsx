@@ -6,7 +6,7 @@ import "aos/dist/aos.css"
 const About = () => {
   return (
     
-    <div className="flex justify-center text-black bg-white w-full h-screen">
+    <div className="flex justify-center text-black bg-white w-full overflow-hidden h-screen">
       <div className="flex h-screen items-center  justify-center">
         <div className="flex flex-col items-center  sm:items-left sm:px-[50px] p-5 h-4/5 w-full ">
           <div className="flex flex-col  justify-center h-full ">

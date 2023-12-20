@@ -15,7 +15,7 @@ const Home = () => {
   return (
     
 
-    <div className="flex w-full h-screen">
+    <div className="flex w-full h-screen overflow-hidden">
       <div>
         <div className="flex flex-col sm:flex-row p-5 justify-center sm:px-[50px]  text-center w-full h-full items-center ">
           <div className="flex flex-col sm:w-3/5 sm:text-left">

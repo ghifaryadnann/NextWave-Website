@@ -12,7 +12,7 @@ const App = () => {
     <>
       <Navbar />
 
-      <main >
+      <main className="mx-auto container overflow-hidden">
         <div id="home">
           <Home />
         </div>
